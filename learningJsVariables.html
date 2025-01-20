@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Java Script variables</title>
+</head>
+<body>
+    <script>
+         
+       // javaScript variables can be 4 ways
+       // 1. automatically. you can store variables with out declaring it.
+       document.write("<h1>Here i used to variables Automatically</h1>");
+        x = 10;
+        y = 10;
+        z = x + y;
+        document.write(z);
+        document.write("<br>");
+        document.write("<h1>Here i used to Store variables with var Keyword</h1>");
+        //2. var
+        // var keyword is used among all the javascript code before 2015
+        // and in the ES6 let and const are introduced
+        var a;
+        var b;
+        a = 10;
+        b = 10;
+        var c;
+        c = a + b;
+        document.write(c);
+        document.write("<br>");
+        document.write("<h1>Here i used let Keyword</h1>");
+        //3. let 
+        let q = 1;
+        let w = 1;
+        let e = q + w;
+        document.write(e);
+        document.write("<br>");
+        document.write("<h1>Here i used to store variables with const Keyword</h1>")
+        //4. const
+        const p = 3;
+        const o = 3;
+        const u = p + o;
+        document.write(u);
+        document.write("<br>");
+        document.write("<h1>Here i am learning about concantation.</h1>")
+        let varible = "5" + 5 + 5;
+        //if the first thing is string then remaining things will be treated as string
+        document.write(varible);
+        document.write("<br>")
+        document.write("<h1>Here i am learning about number concantation</h1>");
+        let myVariable = 5 + 5 + "5";
+        //if the first element is number and then later thing is declared string then it will concantated
+        document.write(myVariable)
+   </script>
+</body>
+</html>

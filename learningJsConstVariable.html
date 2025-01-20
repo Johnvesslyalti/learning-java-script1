@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Const Variable</title>
+</head>
+<body>
+    <script>
+        /* 
+        here i am learning what are the uses of const variable
+        1. const variable cannot be redeclared
+        2. it must be declared before it used
+        3. we cannot reassign the const value
+        4. const is having a block scope
+        */
+       /* 
+       Here i created a Array
+       */
+       const cars = ["Audi", "Ferarri", "BMW"];
+
+       cars[0] = "Lambhorgini";
+
+       cars.push("Toyoto");
+
+       for(let i = 0; i < cars.length; i++) {
+        document.write(cars[i]+"<br>");
+       }
+// here i created object
+       const country = {name:"India", continent:"Asia", place:8};
+
+       country.place = 7;
+
+       document.write("<br>")
+       document.write(country.name);
+       document.write(country.continent);
+       document.write(country.place);
+       /* const should be initialized when it is declared*/
+    </script>
+</body>
+</html>

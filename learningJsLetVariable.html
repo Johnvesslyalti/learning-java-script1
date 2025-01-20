@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Java Script Let Variable</title>
+</head>
+<body>
+    <script>
+        /*
+        1. let variable should be declared before it is used 
+        2. let is having block scope
+        3. let cannot be redeclared
+        4. let does not binds to this
+        */
+       document.write("<br>");
+       document.write("<h1>Here it is having global scope</h1>");
+       let x = 10;
+       document.write(x);
+       document.write("<br>");
+       document.write("<h1>Here it is having </h1>")
+       {
+        let x = 5;
+        document.write(x);
+        //here we can not redeclare a value that is initilized with let keyword.
+       }
+       //Again the x will be 10 here
+       document.write("<br>")
+       document.write("<h1>Here again the x will be 10 here</h1>");
+       document.write(x);
+       let y = x + 5;
+       document.write("<h1>here we can reassign the by adding something</h1>");
+       document.write(y)
+    </script>
+</body>
+</html>
